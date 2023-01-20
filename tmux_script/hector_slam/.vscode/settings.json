@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ayush/workspace/devel/lib/python3/dist-packages",
+        "/home/ayush/modules_workspace/devel/lib/python3/dist-packages",
+        "/home/ayush/mrs_workspace/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/usr/lib/python3/dist-packages"
+    ]
+}

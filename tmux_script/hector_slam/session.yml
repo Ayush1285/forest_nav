@@ -1,0 +1,40 @@
+name: simulation
+root: ./
+pre_window: export UAV_NAME=uav1; export RUN_TYPE=simulation; export ODOMETRY_TYPE=hector; export UAV_TYPE=f450; export WORLD_NAME=simulation_local; export SENSORS="garmin_down"
+startup_window: status
+windows:
+  - roscore:
+      layout: tiled
+      panes:
+        - roscore
+  - gazebo:
+      layout: tiled
+      panes:
+        - waitForRos; roslaunch mrs_simulation simulation.launch world_name:=forest gui:=true
+        - waitForOdometry; gz camera -c gzclient_camera -f ${UAV_NAME}; history -s gz camera -c gzclient_camera -f ${UAV_NAME}
+  - spawn:
+      layout: tiled
+      panes:
+        - waitForSimulation; rosservice call /mrs_drone_spawner/spawn "1 $UAV_TYPE --enable_ground_truth --enable-rangefinder --enable_mobius_camera_front --enable-rplidar --enable-bluefox-camera --pos -45 -49 0 0"
+  - hector_slam:
+      layout: tiled
+      panes:
+        - waitForOdometry; roslaunch mrs_uav_general hector_slam.launch map_resolution:="0.08"
+  - control:
+      layout: tiled
+      panes:
+        - waitForOdometry; roslaunch mrs_uav_general core.launch config_trajectory_generation:=./custom_configs/trajectory_gen.yaml config_odometry:=./custom_configs/odometry.yaml config_constraint_manager:=./custom_configs/constraints.yaml config_control_manager:=./custom_configs/control_manager.yaml config_uav_manager:=./custom_configs/uav_manager.yaml
+  - takeoff:
+      layout: tiled
+      panes:
+        - waitForSimulation; roslaunch mrs_uav_general automatic_start.launch
+        - 'waitForControl;
+          rosservice call /$UAV_NAME/mavros/cmd/arming 1;
+          sleep 2;
+          rosservice call /$UAV_NAME/mavros/set_mode 0 offboard'
+  - rviz:
+      layout: tiled
+      panes:
+        - waitForControl; roslaunch forest_nav rviz.launch
+        - waitForControl; roslaunch mrs_rviz_plugins load_robot.launch
+  

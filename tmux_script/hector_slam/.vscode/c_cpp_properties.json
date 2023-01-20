@@ -1,0 +1,62 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ayush/workspace/devel/include/**",
+        "/home/ayush/modules_workspace/devel/include/**",
+        "/home/ayush/mrs_workspace/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/aloam/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/bluefox2/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/camera_base/include/**",
+        "/home/ayush/workspace/src/example_ros_packages/ros_packages/example_ros_pluginlib/example_manager/include/**",
+        "/home/ayush/workspace/src/forest_nav/include/**",
+        "/home/ayush/workspace/src/forest_path_finder-master/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/hector_slam/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mavros/libmavconn/include/**",
+        "/home/ayush/mrs_workspace/src/simulation/ros_packages/mavlink_sitl_gazebo/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mavros/mavros/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mavros/mavros_msgs/include/**",
+        "/home/ayush/mrs_workspace/src/simulation/ros_packages/mrs_gazebo_common_resources/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_lib/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/mrs_optic_flow/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/mrs_pcl_tools/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_rviz_plugins/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/mrs_serial/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_controllers/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_general/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_managers/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_odometry/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_status/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trackers/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mrs_uav_trajectory_generation/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/thirdparty/nlopt_ros/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/ouster/ouster_client/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/ouster/ouster_ros/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/ouster/ouster_viz/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/realsense/ros_packages/realsense-ros/realsense2_camera/include/**",
+        "/home/ayush/workspace/src/summer_school_supervisor/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/mavros/test_mavros/include/**",
+        "/home/ayush/mrs_workspace/src/uav_core/ros_packages/thirdparty/tf2/tf2/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/mrs_utils/tf_reconfigure/include/**",
+        "/home/ayush/modules_workspace/src/uav_modules/ros_packages/usb_cam/include/**",
+        "/home/ayush/workspace/src/uvdar_core/include/**",
+        "/home/ayush/workspace/src/uvdar_gazebo_plugin/include/**",
+        "/home/ayush/workspace/src/uvdar_leader_follower/include/**",
+        "/home/ayush/workspace/src/example_ros_packages/ros_packages/example_ros_vision/include/**",
+        "/home/ayush/workspace/src/example_ros_packages/ros_packages/example_ros_uav/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

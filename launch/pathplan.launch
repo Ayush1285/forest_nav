@@ -1,0 +1,16 @@
+<launch>
+    
+    <node pkg="tf" type="static_transform_publisher" name="staticmap" args="0 0 0 0 0 0 world map 50" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find forest_nav)/config/plan.rviz"/>
+    <arg name="map_file" default="$(find forest_nav)/map/cylpillars.yaml"/>
+    <node pkg="map_server" type="map_server" name="mapserver" args="$(arg map_file)"/>
+
+    <!--<node pkg="forest_nav" type="forestnav" name="forestnav">
+        <param name="goal_x" value="50" />
+        <param name="goal_y" value="83" />
+        <param name="local_window_size" value="10" />
+        <param name="grids_between_waypoints" value="10" />
+
+    </node>-->
+
+</launch>
