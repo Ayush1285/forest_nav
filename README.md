@@ -3,6 +3,7 @@
 ![forest_world](https://github.com/Ayush1285/forest_nav/assets/64409716/c6f320b6-718f-4d31-9592-a3bc3b31b7fe)
 
 ## RViz simulation
+![forest_nav](https://github.com/Ayush1285/forest_nav/assets/64409716/33a5795e-e12f-44c5-8643-b81c8e3b77fd)
 
 
 ## Gazebo simulation
